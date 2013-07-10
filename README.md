@@ -28,7 +28,7 @@ Here are some examples written in C# showing how the library can be used.
 ### Assemble 32-bit inline mnemonics
 
 ```csharp
-var asm = Fasm.Assemble("use32\nretn");
+var asm = FasmNet.Assemble("use32\nretn");
 ```
 
 The variable `asm` is an array of bytes containing the assembly code.
