@@ -1,0 +1,102 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Fasm.NET, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Binarysharp.Assemblers.Fasm.FasmAssemblerException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ApplicationException
+    Void .ctor(Binarysharp.Assemblers.Fasm.FasmErrors, Int32, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Mnemonics 'get ' : 
+    Int32 ErrorOffset 'get ' : 
+    Int32 ErrorLine 'get ' : 
+    Binarysharp.Assemblers.Fasm.FasmErrors ErrorCode 'get ' : 
+  Methods:
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorLine(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorOffset(): PrivateScope, Public, HideBySig, SpecialName
+    get_Mnemonics(): PrivateScope, Public, HideBySig, SpecialName
+Struct Binarysharp.Assemblers.Fasm.FasmResults: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Binarysharp.Assemblers.Fasm.FasmResults Ok = 0 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults Working = 1 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults Error = 2 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults InvalidParameter = -1 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults OutOfMemory = -2 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults StackOverflow = -3 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults SourceNotFound = -4 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults UnexpectedEndOfSource = -5 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults CannotGenerateCode = -6 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults FormatLimitationsExcedded = -7 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmResults WriteFailed = -8 : Public, Static, Literal, HasDefault
+Struct Binarysharp.Assemblers.Fasm.FasmErrors: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Binarysharp.Assemblers.Fasm.FasmErrors FileNotFound = -101 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors ErrorReadingFile = -102 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidFileFormat = -103 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidMacroArguments = -104 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors IncompleteMacro = -105 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors UnexpectedCharacters = -106 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidArgument = -107 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors IllegalInstruction = -108 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidOperand = -109 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidOperandSize = -110 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors OperandSizeNotSpecified = -111 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors OperandSizesDoNotMatch = -112 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidAddressSize = -113 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors AddressSizesDoNotAgree = -114 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors DisallowedCombinationOfRegisters = -115 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors LongImmediateNotEncodable = -116 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors RelativeJumpOutOfRange = -117 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidExpression = -118 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidAddress = -119 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidValue = -120 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors ValueOutOfRange = -121 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors UndefinedSymbol = -122 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidUseOfSymbol = -123 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors NameTooLong = -124 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors InvalidName = -125 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors ReservedWordUsedAsSymbol = -126 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors SymbolAlreadyDefined = -127 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors MissingEndQuote = -128 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors MissingEndDirective = -129 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors UnexpectedInstruction = -130 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors ExtraCharactersOnLine = -131 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors SectionNotAlignedEnough = -132 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors SettingAlreadySpecified = -133 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors DataAlreadyDefined = -134 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors TooManyRepeats = -135 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors SymbolOutOfScope = -136 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors UserError = -140 : Public, Static, Literal, HasDefault
+    Binarysharp.Assemblers.Fasm.FasmErrors AssertionFailed = -141 : Public, Static, Literal, HasDefault
+Class Binarysharp.Assemblers.Fasm.FasmNet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Mnemonics 'get ' : 
+  Methods:
+    GetVersion(): PrivateScope, Public, Static, HideBySig
+    Assemble(ValueType IntPtr IsBoxed): PrivateScope, Public, HideBySig
+    Assemble(): PrivateScope, Public, HideBySig
+    Assemble(String[], Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Assemble(String[]): PrivateScope, Public, Static, HideBySig
+    Assemble(String, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Assemble(String): PrivateScope, Public, Static, HideBySig
+    AssembleFile(String, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    AssembleFile(String): PrivateScope, Public, Static, HideBySig
+    AssembleFiles(IEnumerable`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    AssembleFiles(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    AddLine(String, Object[]): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    InsertLine(Int32, String, Object[]): PrivateScope, Public, HideBySig
+    get_Mnemonics(): PrivateScope, Public, HideBySig, SpecialName
